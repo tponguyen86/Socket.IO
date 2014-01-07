@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Socket.IO</title>
+    <meta charset="utf-8">
+    <style>
+
+        textarea {
+            width: 100%;
+        }
+        button{
+            float: right;
+        }
+        #Result {
+            margin-bottom: 5em;
+            overflow-y: scroll;
+            border: solid thin;
+            width: 100%;
+            min-height: 200px;
+            max-height: 400px;
+
+        }      
+    </style>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/ChatClient.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Demo : Chat use socket.io</h1>
+    </header>
+    <section>
+        <div id="Result">
+        </div>
+
+        <div>
+                <input type="text" value="Name" id="username" />
+                <textarea  id="message" class="editable">Enter your message here!</textarea><br/>
+                <button id="send" onclick="Chat.send()">Send</button>
+        </div>
+</section>
+    <footer>
+        <p>Created by tponguyen86@gmail.com; - 2014 : Support IE , FF , Chr ...</p>
+    </footer>
+</body>
+</html>
